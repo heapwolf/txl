@@ -1,0 +1,11 @@
+{
+  "name": "txl",
+  "version": "1.0.0",
+  "description": "All your html templating needs in under 10 lines of JS.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/test.js"
+  },
+  "author": "0x00a",
+  "license": "MIT"
+}
