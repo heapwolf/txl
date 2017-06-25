@@ -114,3 +114,8 @@ template({ foo: 100, IF })
   `) }
 </section>
 ```
+
+```html
+<section>
+</section>
+```
