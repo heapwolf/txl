@@ -119,3 +119,23 @@ template({ foo: 100, IF })
 <section>
 </section>
 ```
+
+## DOM DIFFING & PATCHING
+What about all the virtual dom hype?! What if I don't want to target nodes
+directly. What if I have an unnecessarily large change-set that I want to
+throw at a node? You could use [morphdom][1]!
+
+```js
+const morph = require('morphdom')
+const txl = requre('txl')
+
+const template = txl('<div>${count}</div>')
+const someNode = document.querySelector('.some-node')
+
+let n = 10
+while (n--) {
+  morph(someNode, template({ count: n }))
+}
+```
+
+[1]:https://github.com/patrick-steele-idem/morphdom
