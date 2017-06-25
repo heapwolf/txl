@@ -11,7 +11,7 @@ template "locals".
 const Template = require('templates')
 const t = Template('<h1>${name}</h1>')
 
-t({ nane: 'Danzig' }) // t() can be reused
+t({ name: 'Danzig' }) // t() can be reused
 ```
 
 ## ITERATION
