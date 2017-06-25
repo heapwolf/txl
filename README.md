@@ -93,7 +93,7 @@ t({ names: ['Glen', 'Henry'] li: m })
 ## PLUGINS, FILTERS (CONDITIONALS)
 Let's say you want to show a block of content based on a condition, you could
 do this with short-circuit evaluation in some cases, or you could make a simple
-plugin! A plugin in just a function...
+plugin! A plugin is just a function...
 
 ```js
 const txl = require('txl')
