@@ -121,9 +121,9 @@ template({ foo: 100, IF })
 ```
 
 ## DOM DIFFING & PATCHING
-What about all the virtual dom hype?! What if I don't want to target nodes
-directly. What if I have an unnecessarily large change-set that I want to
-throw at a node? You could use [morphdom][1]!
+Generally, you should be able to target nodes directly by using the
+`querySelector` method. In some cases, you may feel like applying a
+large change-set to a node. In this case, you could use [morphdom][1]!
 
 ```js
 const morph = require('morphdom')
@@ -133,6 +133,7 @@ const template = txl('<div>${count}</div>')
 const someNode = document.querySelector('.some-node')
 
 let n = 10
+
 while (n--) {
   morph(someNode, template({ count: n }))
 }
