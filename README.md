@@ -139,4 +139,10 @@ while (n--) {
 }
 ```
 
+## SECURITY
+You may be concerned with escaping depending on where your data comes from
+or how it is stored. In this case there are a lot of really nice modules. For
+instance [he][2] is a well maintained and very robust encoder/decoder.
+
 [1]:https://github.com/patrick-steele-idem/morphdom
+[2]:https://github.com/mathiasbynens/he
