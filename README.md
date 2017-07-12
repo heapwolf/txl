@@ -1,3 +1,5 @@
+[![development sponsored by voltra.co](https://img.shields.io/badge/Development%20sponsored%20by-Voltra.co-yellow.svg)](https://voltra.co/)
+
 # SYNOPSIS
 All your html templating needs in under 10 lines of JS.
 
